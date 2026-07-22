@@ -1,0 +1,139 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1200;
+  backdrop-filter: blur(18px);
+  background: rgba(15, 10, 26, 0.45);
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+html[data-theme="light"] .navbar {
+  background: rgba(250, 245, 255, 0.64);
+}
+
+.navbar-scrolled {
+  background: rgba(15, 10, 26, 0.78);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .navbar-scrolled {
+  background: rgba(250, 245, 255, 0.9);
+  border-bottom-color: rgba(139, 92, 246, 0.16);
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: auto;
+}
+
+.nav-panel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  position: relative;
+  color: var(--text);
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: transform 0.25s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.nav-toggle,
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-grid;
+  }
+
+  .nav-panel {
+    position: fixed;
+    top: 4.6rem;
+    right: 1rem;
+    min-width: 250px;
+    padding: 1rem;
+    border-radius: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px);
+    transform-origin: top right;
+    transform: scale(0.92);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-panel.open {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}

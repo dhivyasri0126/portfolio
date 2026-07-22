@@ -1,0 +1,20 @@
+Dhivyasri M
+Java Full Stack Developer
+
+Computer Science undergraduate with strong foundations in Data Structures, Algorithms, OOP, DBMS, Computer Networks and Software Engineering. Hands-on experience developing full-stack web applications using Java, JavaScript, React.js, Node.js, Django, SQL and REST APIs. Solved 200+ LeetCode problems and passionate about designing scalable software.
+
+Skills: Java, Python, JavaScript, SQL, C, React, Node, Express, Spring Boot, Django, MongoDB, PostgreSQL, MySQL, Git, GitHub, VS Code, Postman
+
+Experience:
+BudgetAppStudio | MERN Stack Developer Intern | May 2026
+
+Achievements:
+200+ LeetCode Problems
+National Finalist NEC IIT Bombay
+NPTEL Elite + Silver
+Full Stack Development Certification
+
+Education:
+B.E Computer Science and Engineering
+Dr. N.G.P Institute of Technology
+CGPA 9.04
