@@ -22,7 +22,6 @@ function Navbar({ theme, toggleTheme }) {
       </a>
 
       <div className="nav-actions">
-        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <button className="nav-toggle" onClick={() => setIsOpen((prev) => !prev)} aria-label="Toggle navigation">
           {isOpen ? <FaXmark /> : <FaBars />}
         </button>
@@ -38,6 +37,9 @@ function Navbar({ theme, toggleTheme }) {
             </li>
           ))}
         </ul>
+        <div className="nav-theme-toggle">
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+        </div>
       </div>
     </nav>
   );
