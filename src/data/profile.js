@@ -1,7 +1,7 @@
 export const profile = {
   name: "Dhivyasri M",
   role: "Java Full Stack Developer",
-  resume: "/dhivyasri-resume.pdf",
+  resume: "/Dhivyasri_M_Resume.pdf",
 
   socials: {
     github: "https://github.com/dhivyasri0126",
@@ -13,6 +13,7 @@ export const profile = {
     {
       title: "ZeroWaste Connect",
       type: "Social Impact | Full Stack Web Application",
+      image: "/projects/zerowaste.png",
       description:
         "ZeroWaste Connect is a full-stack web application that connects donors and recipients, featuring location-based donation discovery with OpenStreetMap and Leaflet, along with email notifications for a seamless donation experience.",
       features: [
@@ -38,6 +39,7 @@ export const profile = {
     {
       title: "YumSpot",
       type: "MERN Restaurant Booking Platform",
+      image: "/projects/yumspot.png",
       description:
         "A polished restaurant booking experience with responsive UX, real-time reservation flow, and strong frontend-backend integration.",
       features: [
@@ -47,12 +49,13 @@ export const profile = {
       ],
       stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
       github: "https://github.com/dhivyasri0126/YumSpot",
-      demo: "",
+      demo: "https://yumspot-pi.vercel.app/",
     },
 
     {
       title: "Local Service Connection",
       type: "Django + PostgreSQL",
+      image: "/projects/lsa_1.jpeg",
       description:
         "A marketplace-style platform that connects local service seekers with service providers through booking, authentication, ratings, and reviews.",
       features: [

@@ -41,7 +41,7 @@ function Hero() {
         </p>
 
         <div className="button-group">
-          <a href={profile.resume} download className="btn btn-primary">Download Resume</a>
+          <a href={profile.resume} download="Dhivyasri_M_Resume.pdf" className="btn btn-primary">Download Resume</a>
           <a href="#projects" className="btn btn-secondary">View Projects</a>
           <a href="#contact" className="btn btn-secondary">Contact Me</a>
         </div>

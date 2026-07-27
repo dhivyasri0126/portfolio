@@ -23,7 +23,7 @@ function Contact() {
                 {item.icon} {item.label}
               </a>
             ))}
-            <a href={profile.resume} download className="btn btn-primary">Download Resume</a>
+            <a href={profile.resume} download="Dhivyasri_M_Resume.pdf" className="btn btn-primary">Download Resume</a>
           </div>
         </div>
       </div>

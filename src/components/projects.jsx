@@ -24,7 +24,8 @@ function Projects() {
             whileHover={{ y: -10, scale: 1.01 }}
           >
             <div className="project-visual">
-              <span className="project-badge">{project.type}</span>
+              {project.image && <img src={project.image} alt={`${project.title} screenshot`} />}
+             
             </div>
             <div className="project-content">
               <h3>{project.title}</h3>
